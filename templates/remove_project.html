@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Remove Project{% endblock %}
+
+{% block content %}
+    <h1>Remove Project</h1>
+    Language: {{ card.language }} <br>
+    Description:   {{ card.description }}
+
+    <h2>Are you sure?</h2>
+    <form method="post">
+        <button type="submit">Yes</button>
+        <a href="{{ url_for('welcome') }}">No</a>
+    </form>
+{% endblock %}

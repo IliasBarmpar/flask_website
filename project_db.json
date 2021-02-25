@@ -1,0 +1,14 @@
+[
+  {
+    "language": "C",
+    "description": "Embedded System"
+  },
+  {
+    "language": "Python",
+    "description": "Machine Learning"
+  },
+  {
+    "language": "C++",
+    "description": "Recommendation System"
+  }
+]

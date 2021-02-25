@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+    <h1>Welcome to my page!</h1>
+    <p>
+        This is the demo application for the course
+        <em>Getting Started with Flask</em>
+        on <a href="https://www.pluralsight.com">
+        Pluralsight</a>.
+    </p>
+
+    <h2>Projects</h2>
+    <ul>
+        {% for project in projects %}
+            <li>
+                <a href="{{ url_for('project_view', index=loop.index0) }}">
+                    {{ project.language }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('add_project') }}">Add a new project</a>
+{% endblock %}
